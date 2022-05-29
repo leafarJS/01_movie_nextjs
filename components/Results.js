@@ -5,7 +5,7 @@ const Results = ({ results }) => {
   return (
     <section>
       {results.map((res) => (
-        <h1>{res.title}</h1>
+        <Card key={res.id} res={res} />
       ))}
     </section>
   );
