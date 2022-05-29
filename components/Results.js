@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Results = () => {
+const Results = ({ results }) => {
   return (
-    <div>
-      <h1>Results</h1>
-    </div>
+    <section>
+      {results.map((res) => (
+        <h1>{res.title}</h1>
+      ))}
+    </section>
   );
 };
 
